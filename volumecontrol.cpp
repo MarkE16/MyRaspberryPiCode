@@ -95,12 +95,14 @@ void VolumeControl::on_pushButton_3_clicked()
     {
         if (volumeLevel == 0)
         {
-            QMessageBox::critical(this, "Error", "This command does not need to continue has the volume value is already default.");
+            QMessageBox::critical(this, "Error", "This command does not need to continue as the volume value is already default.");
         }
         else
         {
             volumeLevel = 0;
-            QMessageBox::information(this, "Success", "Values were reset. Reopen this page for the changes to take effect.");
+            ui->progressBar->setValue(volumeLevel);
+            ui->horizontalSlider->setValue(volumeLevel);
+            QMessageBox::information(this, "Success", "Successfully reset values.");
         }
     }
 }

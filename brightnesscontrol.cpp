@@ -194,7 +194,15 @@ void BrightnessControl::on_pushButton_4_clicked()
             frontBrightnessLvl = 0;
             midBrightnessLvl = 0;
             backBrightnessLvl = 0;
-            QMessageBox::information(this, "Success", "Values were reset. Reopen this page for the changes to take effect.");
+            ui->horizontalSlider->setValue(headBrightnessLvl);
+            ui->horizontalSlider_2->setValue(frontBrightnessLvl);
+            ui->horizontalSlider_3->setValue(midBrightnessLvl);
+            ui->horizontalSlider_4->setValue(backBrightnessLvl);
+            ui->progressBar->setValue(headBrightnessLvl);
+            ui->progressBar_2->setValue(frontBrightnessLvl);
+            ui->progressBar_3->setValue(midBrightnessLvl);
+            ui->progressBar_4->setValue(backBrightnessLvl);
+            QMessageBox::information(this, "Success", "Successfully reset all values.");
         }
     }
 }

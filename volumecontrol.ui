@@ -122,18 +122,31 @@ background-color: rgb(198, 198, 198);</string>
      <string>Reset Volume</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>50</y>
-      <width>261</width>
-      <height>16</height>
+      <y>30</y>
+      <width>254</width>
+      <height>36</height>
      </rect>
     </property>
-    <property name="text">
-     <string>+ This menu is to control the volume of each piece.</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>[INFORMATION]</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>+ This menu is to control the volume of each piece.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

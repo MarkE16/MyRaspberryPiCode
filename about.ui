@@ -14,7 +14,8 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(154, 154, 154);</string>
+   <string notr="true">background-color: rgb(154, 154, 154);
+alternate-background-color: rgb(178, 224, 255);</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">

@@ -14,7 +14,8 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(154, 154, 154);</string>
+   <string notr="true">background-color: rgb(154, 154, 154);
+</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -255,18 +256,31 @@ background-color: rgb(198, 198, 198);</string>
      <string>Reset Brightness</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>70</y>
-      <width>271</width>
-      <height>16</height>
+      <y>50</y>
+      <width>261</width>
+      <height>36</height>
      </rect>
     </property>
-    <property name="text">
-     <string>+ This menu is to adjust the brightness of each light.</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>[INFORMATION]</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>+ This menu is to adjust the brightness of each light.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

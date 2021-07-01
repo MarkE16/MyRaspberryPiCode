@@ -80,7 +80,7 @@ void InteriorLights::on_pushButton_3_clicked()
     else
     {
         ui->pushButton_3->setText("OFF");
-        ui->label->setText("Toggle Lights");
+        ui->label->setText("+ Toggle Lights");
         ui->pushButton_3->setStyleSheet("background-color: #c6c6c6");
         ui->checkBox->hide();
         ui->checkBox_2->hide();
@@ -97,12 +97,13 @@ void InteriorLights::on_checkBox_stateChanged(int arg1)
     if (arg1 == 0)
     {
         front = false;
-        ui->label->setText("Turned off front light.");
+        ui->label->setText("+ Turned off front light.");
+
     }
     else
     {
         front = true;
-        ui->label->setText("Turned on front light.");
+        ui->label->setText("+ Turned on front light.");
     }
 }
 
@@ -112,12 +113,12 @@ void InteriorLights::on_checkBox_2_stateChanged(int arg1)
     if (arg1 == 0)
     {
         mid = false;
-        ui->label->setText("Turned off middle light.");
+        ui->label->setText("+ Turned off middle light.");
     }
     else
     {
         mid = true;
-        ui->label->setText("Turned on middle light.");
+        ui->label->setText("+ Turned on middle light.");
     }
 }
 
@@ -128,12 +129,12 @@ void InteriorLights::on_checkBox_3_stateChanged(int arg1)
     if (arg1 == 0)
     {
         back = false;
-        ui->label->setText("Turned off back light.");
+        ui->label->setText("+ Turned off back light.");
     }
     else
     {
         back = true;
-        ui->label->setText("Turned on back light.");
+        ui->label->setText("+ Turned on back light.");
     }
 }
 
